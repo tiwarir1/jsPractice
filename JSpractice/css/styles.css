@@ -1,0 +1,12 @@
+body.day {
+	background-color: white;
+}
+
+body.night {
+	background-color: black; 
+}
+
+.night h1, .night p{
+	color:fff;
+	font-weight: bold;
+}
