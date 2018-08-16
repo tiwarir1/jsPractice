@@ -56,3 +56,16 @@ function multiplesOfNums() {
 	
 }
 
+function passGen() {
+	var char_List = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+=-[]}{";
+	var arr = [""];
+	var len = char_List.length;
+	var num = prompt("enter length of password: ");
+	for (var i  = 0; i < num; i++){
+		arr += char_List.charAt(Math.floor(Math.random() * len ));
+	}
+
+	alert(arr);
+
+}
+
