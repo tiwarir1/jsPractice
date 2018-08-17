@@ -69,3 +69,21 @@ function passGen() {
 
 }
 
+function weekendCheck() {
+	var day = "";
+	//day = new Date().toJSON();
+	//console.log(day);
+	var inp = prompt("enter a date in this format Month DD, YYYY", 'Aug 18, 2018');
+	var chk = new Date(inp);
+	console.log(chk.getDay());
+	var wEnd = chk.getDay();
+	console.log(wEnd);
+	if (wEnd == 6 || wEnd == 0){
+		day = "WEEKEND!!!"; 
+	}
+	else {
+		day = "not a weekend";
+	}
+	alert(day);
+}
+
