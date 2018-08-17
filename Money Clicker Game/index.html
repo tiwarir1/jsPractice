@@ -10,7 +10,7 @@
 <body>
 	<div id = "menu">
 		<div class="buttons-wrapper">
-			<button class="btn btn-item">Info </button>
+			<button class="btn btn-item" onclick = "popup()">Info </button>
 		</div>
 	</div>
 
@@ -22,11 +22,27 @@
 			<img src = "images/money-bag.png">
 		</div>
 
-		<button class = "btn-item" onclick = "getWorker()">
+		<button class = "btn-item" onclick = "getStaff('workers', 'workerCost')">
 			Buy worker for <span id = "workerCost"></span>
 		</button>
-		<div id = "numberOfWorkers">
-			
+		<div id = "numberOfWorkers"></div>
+
+		<button class = "btn btn-item" onclick="getStaff('teamLeader', 'teamLeaderCost')">
+			Buy Team leader for <span id = "teamLeaderCost"></span>
+		</button>
+		<div id = "numberOfTeamLeader"></div>
+
+		<button class = "btn btn-item" onclick = "getStaff('manager', 'managerCost')">
+			Buy Manager for <span id = "managerCost"></span>
+		</button>
+		<div id = "numberOfManager"></div>
+
+		<div id = "popup-info" class = "visible">
+			<h2>Welcome to the Monybag Clicker game!!</h2>
+			<p>Click on the bag to get money! Its that simple!</p>
+			<p>The more and faster you click on the bag, the greater the money you generate</p>
+			<p>Buy workers, and team leaders and managers to make up an organization</p>
+			<p>Be a boss that automates virtual currency, not crypto lol</p> 
 		</div>
 	</div>
 	<footer>@Copyright. All rights reserved</footer>
