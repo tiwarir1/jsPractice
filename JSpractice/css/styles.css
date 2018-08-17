@@ -10,3 +10,9 @@ body.night {
 	color:fff;
 	font-weight: bold;
 }
+
+#displ {
+	border-style: : solid;
+	border-width:  2px;
+	background-color: yellow;
+}
