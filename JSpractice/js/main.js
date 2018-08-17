@@ -129,7 +129,7 @@ function factorial() {
 		nums +=i;
 		if (i == 1){
 			break;
-		}
+		} 
 		nums += "*";
 
 	}
