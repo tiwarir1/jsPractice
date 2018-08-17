@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Money Clicker game</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id = "menu">
+		<div class="buttons-wrapper">
+			<button class="btn btn-item">Info </button>
+		</div>
+	</div>
+
+	<div id = "game-content">
+		<h1>Money Clicker</h1>
+		<h2 id = "moneyAmount"></h2>
+		<h3 id = "moneyPerSec"></h3>
+		<div id = "money" style = "cursor: pointer;" onclick="moneyClicked()">
+			<img src = "images/money-bag.png">
+		</div>
+
+		<button class = "btn-item" onclick = "getWorker()">
+			Buy worker for <span id = "workerCost"></span>
+		</button>
+		<div id = "numberOfWorkers">
+			
+		</div>
+	</div>
+	<footer>@Copyright. All rights reserved</footer>
+</body>
+</html>
